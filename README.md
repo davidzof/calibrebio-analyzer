@@ -62,7 +62,7 @@ python   cpet.py --input ramp-test.csv --fatmax  --smooth-bpm 10 --trim 30, --no
 
 python cpet.py --input ramp-test.csv --vo2kg --x time  --mark-peaks --title "Mass-specific O2"
 
-![VO2 max](example-graphs/fatmax.png?raw=true "VO2 max")
+![VO2 max](example-graphs/vo2.png?raw=true "VO2 max")
 
 --x
 * time
