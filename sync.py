@@ -19,7 +19,7 @@ Fallback:
   or enable --hr-nearest to map each CPET row to the nearest TCX HR within a bpm window.
 
 Usage:
-  python sync_power.py --cpet CPET.csv --tcx ride.tcx --out merged.csv
+  python sync.py --cpet CPET.csv --tcx ride.tcx --out merged.csv
 """
 
 import argparse
@@ -56,7 +56,7 @@ def read_tcx(tcx_path: str) -> pd.DataFrame:
     times, hrs, watts = [], [], []
 
     # Walk through all Trackpoints
-    for tp in root.iter(): © David George, 2025
+    for tp in root.iter():
         if not tp.tag.endswith("Trackpoint"):
             continue
 
